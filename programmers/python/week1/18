@@ -1,0 +1,9 @@
+def solution(myString, pat):
+    answer = ''
+    for i in range(len(myString)):
+        if myString[i] == "A" : answer += "B"
+        else : answer+= "A"
+    for j in range(len(answer)-len(pat)+1):
+        ans = answer[j:j+len(pat)]
+        if ans == pat : return 1
+    else : return 0
