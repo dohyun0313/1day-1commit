@@ -1,0 +1,11 @@
+def solution(my_string, indices):
+    answer = []
+    str = ''
+    for i in range(len(my_string)):
+        answer.append(1)
+    for num in indices :
+        answer[num] -=1
+    for i in range(len(my_string)):
+        if answer[i] == 1 :
+            str += my_string[i]
+    return str
