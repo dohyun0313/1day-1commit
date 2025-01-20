@@ -1,0 +1,7 @@
+def solution(start_num, end_num):
+    answer = []
+    num = start_num
+    while num >= end_num :
+        answer.append(num)
+        num -=1
+    return answer
