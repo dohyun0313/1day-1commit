@@ -1,0 +1,9 @@
+def solution(arr, intervals):
+    answer = []
+    a, b = intervals[0]
+    c, d = intervals[1]
+    for i in range(a,b+1):
+        answer.append(arr[i])
+    for i in range(c,d+1):
+        answer.append(arr[i])
+    return answer
