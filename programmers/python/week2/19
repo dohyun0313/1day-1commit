@@ -1,0 +1,16 @@
+def solution(arr):
+    answer = []
+    temp = 0
+    for i in range(len(arr)):
+        if arr[i] == 2 :
+            answer.append(i)
+
+    if len(answer) == 0 : 
+        answer.append(-1)
+        return answer
+    elif len(answer) == 1 : 
+        return [2] ㄴ
+    else : 
+        a = answer[0]
+        b = answer[-1]
+        return arr[a:b+1]
