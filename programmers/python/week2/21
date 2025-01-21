@@ -1,0 +1,5 @@
+def solution(num_list, n):
+    ans1 = num_list[n:]
+    ans2 = num_list[:n]
+    ans1.extend(ans2)
+    return ans1
