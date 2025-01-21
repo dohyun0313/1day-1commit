@@ -1,0 +1,9 @@
+def solution(names):
+    answer = []
+    count = 0
+    for char in names :
+        if count%5 == 0 :
+            answer.append(char)
+        count +=1
+        
+    return answer
