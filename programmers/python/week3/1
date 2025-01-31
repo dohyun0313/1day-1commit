@@ -1,0 +1,8 @@
+def solution(myString, pat):
+    answer = ''
+    ll = len(pat)*-1
+    for i in range(len(myString)):
+        list1 = myString[:i+1]
+        if pat in list1[ll:] :
+            answer = myString[:i+1]
+    return answer
