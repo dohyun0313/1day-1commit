@@ -1,0 +1,12 @@
+def solution(order):
+    answer = 0
+    menu1 = ["iceamericano","americanoice","anything","americanohot","hotamericano","americano"]
+    menu2 = ["cafelatte"]
+    for i in range(len(order)):
+        if order[i] in menu1:
+            answer += 4500
+            
+        else : 
+            answer += 5000
+           
+    return answer
