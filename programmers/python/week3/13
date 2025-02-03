@@ -1,0 +1,10 @@
+def solution(rank, attendance):
+    result = []
+    answer = []
+    for i in range(len(rank)):
+        result.append(rank.index(i+1))
+    for i in range(len(result)):
+        if attendance[result[i]] :
+            answer.append(result[i])
+    
+    return 10000*answer[0]+100*answer[1]+answer[2]
