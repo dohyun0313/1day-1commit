@@ -1,0 +1,13 @@
+def solution(arr, k):
+    answer = []
+    n = 0
+    for i in range(k):
+        answer.append(-1)
+    for i in range(len(arr)):
+        if arr[i] not in answer:
+            answer[n] = arr[i]
+            n +=1
+        if n == k :
+            break
+        
+    return answer
