@@ -1,0 +1,12 @@
+def solution(strArr):
+    answer = []
+    num = 0
+    for i in range(max(map(len, strArr))):
+        answer.append(0)
+    for i in range(len(strArr)):
+        k = len(strArr[i])
+        answer[k-1] +=1
+    for i in range(len(answer)):
+        if num <= answer[i] :
+            num = answer[i]
+    return num
