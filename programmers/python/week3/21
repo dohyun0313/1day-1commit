@@ -1,0 +1,16 @@
+def solution(picture, k):
+    answer = []
+    for i in range(len(picture)):
+        result = ""
+        for char in picture[i]:
+            if char == "x":
+                for l in range(k):
+                    result +="x"
+            else :
+                for l in range(k):
+                    result +="."
+        for l in range(k):
+            answer.append(result)
+                    
+        
+    return answer
