@@ -1,0 +1,13 @@
+def solution(arr):
+    # 행이 열보다 많을 경우 (행을 늘려야 할 경우)
+    if len(arr) > len(arr[0]):
+        for i in range(len(arr)):
+            for j in range(len(arr[i]), len(arr)):
+                arr[i].append(0)
+                
+    # 열이 행보다 많을 경우 (열을 늘려야 할 경우)
+    elif len(arr) < len(arr[0]):
+        for i in range(len(arr[0]) - len(arr)):
+            arr.append([0] * len(arr[0]))
+            
+    return arr
